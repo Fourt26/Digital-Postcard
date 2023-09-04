@@ -1,0 +1,97 @@
+ <div>Estoy dentro de un div</div>
+         <!--se puede usar en todos lados y se usa para hacer una division
+        este tag se puede usar para entregarle la estructura al post.-->
+         <span>esto es un span</span>
+        <!--etiqueta tipo contenedor pero son en linea. ocupan solamente lo 
+        que se encuentra como texto. esto puede servir para los likes del post-->
+        <article>esto es un articulo</article>
+         <!--es un tag que es parecido a un parrafo pero solo usa una 
+        seccion de la pagina. a esta mas adelante se le puede entregar una
+        dimension predeterminada. es tipo bloque, ocupa todo el espacio
+        disponible-->
+        <h1> h1 se usa para titulos</h1>
+        <h5>h5 se usa para subtitulos.</h5>
+        <!--etiquetas formulario se usan para captar datos del cliente-->
+        <button></button>
+        <!--etiqueta que genera un boton-->
+        <input type="file" placeholder="selecciona un archivo">
+        <!--etiqueta formulario ue le solicita una accion al cliente.-->\
+        <img src=".vscode/rigo-baby.jpeg" alt="imagen de una wea rara">
+        <!--el alt trabaja en el caso en el que la imagen no funcione o 
+        no se encuentre. se usa el termino romper imagen cuando no funciona.
+        en este caso si no funciona la imagen apareceria un texto que dice "una
+        wea rara."-->
+        <video width="320" height="240" controls></video>
+        <source src="" type="">
+        <source src="" type="">
+        <!--aca lo que estamos haciendo es insertando un video en la pagina
+        pero la diferencia es que en el tag de video, se le entrega las dimensiones
+        en las cuales puede aparecer. luego se le entrega las fuentes de donde 
+        encontrar el video que se va a mostrar. en las etiquetas de img 
+        tambien se puede usar el tag source. El atributo "type" sirve para
+        determinar si el archivo es local o no.-->
+        <audio></audio>
+        <source src="" type="">
+
+        css ---> cascade style sheet
+        <!--se usa para entregarle animaciona a la pagina, sin este la pagina web
+        vendria siendo extremadamente fome.-->
+        .selector {
+            padding: 50px;
+        }
+        <!--css funciona con selectores, estos selectores sirven para determinar a que
+        etiqueta se le va a entregar el estilo formado.-->
+        <!--luego al selector se le entregan las propiedades y los detalles.-->
+        hay 3 selectores para principiantes, estos son:
+        - id ---> esta se hace de la siguiente manera:
+        <p id="p1"></p> asi se vera en el archivo html.
+        en el archivo css se vera de la siguiente forma
+        #p1 {
+            color: red;
+        }
+        ahi se puede ver que le entregamos a la etiqueta <p></p> el color rojo.
+        ID tiene preferncia sobre class
+
+        - class ---> esta se hace de la siguiente manera:
+        <p id="p1" class="clase1"></p> <!--asi se vera en HTML-->
+        luego en css se vera de la siguiente forma
+        .clase1 {
+            font-weight: bold;
+        }
+        aca podemos ver que a la clase 1 le estoy entregando la propiedad de estar
+        en negrita.
+
+        - div ---> se hace de la siguiente manera:
+        <div></div> <!--asi se vera en HTML-->
+        luego en css se vera de la forma.
+        div {
+            font-family: courier;
+        }
+        aca lo que estamos haciendo es entregandole a la etiqueta div una propiedad
+        de un cambio en la letra que en ete caso seria a courier. y este vendria
+        siendo el con menos prioridad.
+
+        Importante aprender a usar iconos, estos se usan con la etiqueta <i> y viene de icono.
+        Se usa la web font awesome.
+
+        div.text-html {
+            grid-column: 2;
+            grid-row: 1;
+            font-size: small;
+            justify-content: left;
+        }
+        div.text-rigoberto {
+            grid-column: 2;
+            grid-row: 2;
+            font-size: small;
+            justify-content: left;
+        }
+
+
+
+        <div class="text-html">
+        HTML 
+     </div>
+     <div class=text-rigoberto>
+        Rigoberto
+     </div>
